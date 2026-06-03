@@ -52,3 +52,50 @@
 
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
+
+print("|", "_" * 35, "|")
+print("| Calculadora                         |")
+print("|", "_" * 35, "|")
+
+print("""| 1 - Soma
+| 2 - Subtração
+| 3 - Multiplicação
+| 4 - Divisão""")
+
+print("|", "_" * 35, "|")
+opcao = input("| Escolha uma das opções: ")
+
+if opcao == "1":
+
+    num1 = float(input("| Digite o primeiro número: "))
+
+    num2 = float(input("| Digite o segundo número: "))
+
+    print(f"| O resultado é: {num1+num2}")
+
+elif opcao == "2":
+
+    num1 = float(input("| Digite primeiro número: "))
+
+    num2 = float(input("| Digite segundo número: "))
+
+    print(f"| O resultado é: {num1-num2}")
+
+elif opcao == "3":
+
+    num1 = float(input("| Digite primeiro número: "))
+
+    num2 = float(input("| Digite segundo número: "))
+
+    print(f"| O resultado é: {num1*num2}")
+
+elif opcao == "4":
+
+    num1 = float(input("| Digite número dividendo: "))
+
+    num2 = float(input("| Digite número divisor: "))
+
+    print(f"| O resultado é: {num1/num2}")
+
+else:
+    print("| Opção inválida                      |")

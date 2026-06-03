@@ -21,3 +21,23 @@
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
 
+print("| ____________________________ |")
+print("| SISTEMA DE PROVAS            |")
+print("| ____________________________ |")
+nome = str(input("|Nome do aluno: "))
+nota1 = float(input("| Nota da primeira prova: "))
+nota2 = float(input("| Nota da segunda prova: "))
+nota3 = float(input("| Nota da terceira prova: "))
+
+media = (nota1  + nota2 + nota3) / 3
+
+if media > 5:
+    condicao = "Aprovado!"
+else:
+    condicao = "Reprovado"
+
+print("| ____________________________ |")
+print(f"| Aluno: {nome}")
+print(f"| Média: {media:.2f}")
+print(f"| Aluno {condicao}")
+print("| ____________________________ |")

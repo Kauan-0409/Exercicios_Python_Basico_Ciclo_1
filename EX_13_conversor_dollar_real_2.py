@@ -25,3 +25,26 @@
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
 
+pergunta = int(input("""Escolha uma opção
+1 - Dollar para Real
+2 - Real para Dollar
+Digite a opção: """))
+
+if pergunta == 1:
+    cotacao = float(input("Digite a cotação do dollar: "))
+    dolar = float(input("Digite o valor em dollar a ser convetido para real:  US$"))
+
+    real = dolar * cotacao
+ 
+    print(f"O valor em reais é: R${real:.2f}")
+
+elif pergunta == 2:
+
+    cotacao = float(input("Digite a cotação do dollar: "))
+    real = float(input("Digite o valor em real a ser convetido para dollar: R$"))
+    dolar = real / cotacao
+
+    print(f"R$ {dolar:.2f}")
+
+else:
+    print("Opção inválida")

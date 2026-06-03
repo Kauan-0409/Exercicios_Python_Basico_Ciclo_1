@@ -15,3 +15,10 @@
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
 
+senha = input("Digite a senha: ")
+
+if senha == "2B1S":
+    print("Senha correta")
+
+else:
+    print("Senha incorreta")

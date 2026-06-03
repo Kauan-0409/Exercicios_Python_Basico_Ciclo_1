@@ -37,3 +37,66 @@
 # Você andou 100.0km por 10 dias, então o preço a pagar é R$615.00.
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
+print("|", "_" * 35, "|")
+print("| DRIVE STYLE - ALUGUEL AUTOMOTIVO    |")
+print("| Carros disponíveis:                 |")
+print("""| Chevrole Opala 1971 - 1
+| Diaria = 350
+| 
+| Hyundai HB20s - 2
+| Diaria = 90
+| 
+| VW Santana Quantum - 3
+| Diaria = 150
+| 
+| VW Voyage G1 - 4
+| Diaria = 180
+| 
+| VW Saveiro G3 - 5
+| Diaria = 100
+| """)
+
+pergunta = input("| Qual desses você alugou? ")
+
+if pergunta == "1":
+    dia = int(input("| Por quantos dias o carro foi alugado: "))
+    km = float(input("| Quantos km o carro rodou: "))
+
+    preco = (dia * 350) + (km * 0.15)
+
+    print(f"| Você andou {km}km por {dia} dias com o Opala 1971, então o preço a pagar é R${preco:.2f}")
+
+elif pergunta == "2":
+    dia = int(input("| Por quantos dias o carro foi alugado: "))
+    km = float(input("| Quantos km o carro rodou: "))
+
+    preco = (dia * 90) + (km * 0.15)
+
+    print(f"| Você andou {km}km por {dia} dias com o HB20s, então o preço a pagar é R${preco:.2f}")
+
+elif pergunta == "3":
+    dia = int(input("| Por quantos dias o carro foi alugado: "))
+    km = float(input("| Quantos km o carro rodou: "))
+
+    preco = (dia * 150) + (km * 0.15)
+
+    print(f"| Você andou {km}km por {dia} dias com o VW Santana Quantum, então o preço a pagar é R${preco:.2f}")
+
+elif pergunta == "4":
+    dia = int(input("| Por quantos dias o carro foi alugado: "))
+    km = float(input("| Quantos km o carro rodou: "))
+
+    preco = (dia * 180) + (km * 0.15)
+
+    print(f"| Você andou {km}km por {dia} dias com o VW Voyage G1, então o preço a pagar é R${preco:.2f}")
+
+elif pergunta == "5":
+    dia = int(input("| Por quantos dias o carro foi alugado: "))
+    km = float(input("| Quantos km o carro rodou: "))
+
+    preco = (dia * 100) + (km * 0.15)
+
+    print(f"| Você andou {km}km por {dia} dias com o VW Saveiro G3, então o preço a pagar é R${preco:.2f}")
+
+else:
+    print("| Opção inválida")
